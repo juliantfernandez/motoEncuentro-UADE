@@ -1,0 +1,263 @@
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lato:wght@100;300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primario: #00934D;
+    --color-secundario: #7EC300;
+    --color-terciario: #008244;
+    --color-negro: #000000;
+    --color-blanco: #fff;
+    --font-primaria: 'Lato', sans-serif;
+    --font-secundaria: 'Black Ops One', sans-serif;
+}
+
+header{
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 100%;
+    height: 130px;
+}
+
+.logo-header{
+    width: 150px;
+}
+
+nav ul{
+     display: flex;
+     gap: 20px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration:  none;
+    color: var(--color-blanco);
+    font-family: var(--font-primaria);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    color: var(--color-negro);
+}
+
+.hero-section{ 
+    background-image: url('/media/background-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-height: 100%;
+    height: 400px;
+}
+.hero-title h2{ 
+    font-family: var(--font-primaria);
+    font-size: 50px;
+    color: var(--color-blanco);
+    font-weight: 600;
+    text-align: center;
+}
+
+.hero-title p{
+    color: var(--color-secundario);
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--font-primaria);
+}
+
+.secondary-section{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding: 30px;
+    background-color: var(--color-negro);
+}
+
+.secondary-section div h2{
+    font-family: var(--font-primaria);
+    color: var(--color-blanco);
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.secondary-section div p{
+    color: var(--color-secundario);
+    font-family: var(--font-primaria);
+    text-align: center;
+}
+
+.section-motor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.section-motor-title h3{
+    font-family: var(--font-primaria);
+    color: var(--color-secundario);
+    font-size: 28px;
+}
+
+footer{
+    background-color: var(--color-negro);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:50px;
+}
+
+footer i{
+    padding: 0px 20px 0px 20px;
+    color: var(--color-blanco);
+    font-size: 30px;
+    font-family: var(--font-primaria);
+}
+.hoteles{
+    background-color: var(--color-negro);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.section-hotel-1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section-hotel-1 img{
+ width: 600px;
+}
+.section-hotel-1 div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 250px;
+}
+.section-hotel-1 div h3{
+    color: var(--color-secundario);
+    font-family: var(--font-primaria);
+    font-size: 25px;
+
+}
+
+.section-hotel-1 div p{
+    font-family: var(--font-primaria);
+    font-size: 17px;
+    color: var(--color-blanco);
+}
+
+.img-hotel-2{
+    width: 600px!important;
+    height: 400px;
+}
+
+.gallery-container{
+    background-color: var(--color-negro);
+}
+.gallery-1{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.gallery-2{
+    display: flex;
+    gap: 10px;
+}
+
+.gallery-1 img:nth-child(1){
+ width: 50%;
+}
+
+.gallery-1 img:nth-child(2){
+    width: 50%;
+   }
+
+.gallery-2 img:nth-child(1){
+    width: 50%;
+}
+
+.gallery-2 img:nth-child(2){
+    width: 50%;
+}
+.form-container{
+    background-color: var(--color-negro);
+    display: flex;
+    justify-content: space-around;
+}
+form{
+    padding: 10px 20px;
+}
+
+form h3{
+    color: var(--color-blanco);
+    font-family: var(--font-primaria);
+    text-align: center;
+    font-size: 30px;
+}
+
+form input, textarea{
+    border: 3px solid var(--color-terciario);
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: var(--font-primaria);
+}
+
+form textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    font-family: var(--font-primaria);
+}
+.btn-send{
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    padding: 20px;
+    font-family: var(--font-primaria);
+}
+.btn-send:hover{
+    color: var(--color-blanco);
+   background-color: var(--color-terciario);
+   cursor: pointer;
+}
+.text-form{
+    margin-top: 40px;
+}
+.text-form h3{
+    color: var(--color-blanco);
+    font-family: var(--font-primaria);
+    font-size: 20px;
+
+}
+.text-form p{
+    color: var(--color-secundario);
+    font-family: var(--font-primaria);
+    font-size: 16px;
+}
+
+.section-contact{
+    background-color: var(--color-negro);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color-blanco);
+    font-family: var(--font-primaria);
+}
+
